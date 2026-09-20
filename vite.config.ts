@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
   const isProd = mode === "production";
 
   return {
-    base: isProd ? "/todo-react/" : "/",
+    base: isProd ? "/weather-app/" : "/",
     plugins: [reactPlugin()],
     resolve: {
       alias: {
