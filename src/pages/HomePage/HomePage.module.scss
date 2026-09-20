@@ -1,0 +1,27 @@
+@use "@/shared/assets/styles/helpers" as *;
+
+.pageContainer {
+	display: flex;
+
+	flex-direction: row;
+
+	gap: rem(20);
+
+	padding-inline: rem(40);
+
+	@include mobile {
+		padding-inline: rem(10);
+		padding-block: rem(30);
+	}
+
+	min-height: rem(400);
+
+	@include mobile-s {
+		flex-direction: column-reverse;
+		min-height: rem(300);
+	}
+
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+}
